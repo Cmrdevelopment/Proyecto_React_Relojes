@@ -4,7 +4,7 @@ import "./CountDown.css";
 const Countdown = () => {
   const [time, setTime] = useState("");
   useEffect(() => {
-    let countDownDate = new Date("Jan 1, 2020 00:00:00").getTime();
+    let countDownDate = new Date("Jan 1, 2025 00:00:00").getTime();
     let x = setInterval(() => {
       let now = new Date().getTime();
       let distance = countDownDate - now;
@@ -21,7 +21,12 @@ const Countdown = () => {
       }
     }, 1000);
   }, []);
-  return <div className="countdown"></div>;
+
+  return (
+    <div className="countdown">
+      <h2>{time}</h2>
+    </div>
+  );
 };
 
 export default Countdown;
