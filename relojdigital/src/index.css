@@ -8,13 +8,17 @@
   box-sizing: border-box;
 }
 
+div#root {
+  padding: 0px;
+}
+
 body {
   margin: 0;
   display: flex;
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
-  background-color: #1a1a1a;
+  background-color: #764a4a;
 }
 
 button {
